@@ -1,0 +1,11 @@
+﻿cl : Command line warning D9002: ignoring unknown option '-std=c++11'
+  Main.cpp
+  A2.cpp
+c:\cygwin64\home\xcliu\cs488\a2\a2.cpp(51): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  Generating Code...
+imgui.lib(imgui.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in A2.obj
+imgui.lib(imgui.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in A2.obj
+imgui.lib(imgui_draw.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in A2.obj
+imgui.lib(imgui_draw.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in A2.obj
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+..\A2.exe : fatal error LNK1319: 4 mismatches detected
