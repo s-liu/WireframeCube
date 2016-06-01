@@ -639,11 +639,11 @@ vector<vec4> A2::clip(vec4 start, vec4 end) {
 		if (endBC[i] < 0) {
 			// end point is outside the plane i (exiting)
 			tHit = startBC[i] / (startBC[i] - endBC[i]); // calculate tHit
-			tOut = min(tOut, tHit);
+			tOut = glm::min(tOut, tHit);
 		} else if (startBC[i] < 0) {
 			// start point is outside the plain i (entering)
 			tHit = startBC[i] / (startBC[i] - endBC[i]);
-			tIn = max(tIn, tHit);
+			tIn = glm::max(tIn, tHit);
 		}
 		if (tIn > tOut) {
 			return clippedCoords;
